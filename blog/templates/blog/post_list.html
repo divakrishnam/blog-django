@@ -1,1 +1,8 @@
-<h1>Under construction!</h1>
+<h1><a href="">Diva Blog</a></h1>
+{% for post in posts %}
+<div>
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p>Published: {{ post.published_date }}</p>
+    <p>{{ post.text|linebreaksbr }}</p>
+</div>
+{% endfor %}
